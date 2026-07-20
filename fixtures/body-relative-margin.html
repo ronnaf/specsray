@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Body Relative Margin</title>
+<style>
+  /* Common real-world pattern: body is a containing block and keeps the default margin. */
+  body { position: relative; margin: 8px; background: #efe; }
+  .card { width: 300px; height: 120px; background: #fff; border: 1px solid #9a9; margin: 12px 0; padding: 10px; }
+  .tall { height: 1200px; background: linear-gradient(#fff, #ddd); }
+</style>
+</head>
+<body>
+  <div class="card">Body position:relative with 8px margin</div>
+  <div class="card">Second card</div>
+  <div class="tall">Tall content forcing vertical scroll</div>
+</body>
+</html>

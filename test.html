@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Measure Overlay Test Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 24px;
+    font-family: Georgia, serif;
+    background: #f5f5f5;
+    color: #222;
+  }
+  h1 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 16px 0;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 16px 24px 16px 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+  .card p {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-style: italic;
+    margin: 0 0 10px 0;
+  }
+  .grid {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .box {
+    width: 120px;
+    height: 80px;
+    padding: 10px;
+    margin: 6px;
+    background: #cde;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .nested {
+    padding: 8px;
+    margin: 4px;
+    background: #eef;
+    border: 1px dashed #99a;
+  }
+  .tiny {
+    width: 20px;
+    height: 10px;
+    background: red;
+  }
+  .thin-spacing {
+    width: 60px;
+    height: 24px;
+    padding: 2px;
+    margin: 3px;
+    border: 1px solid #944;
+    background: #fdd;
+  }
+  .flex-wrap-gap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 340px;
+    margin-top: 20px;
+  }
+  .flex-wrap-gap .chip {
+    width: 90px;
+    height: 50px;
+    background: #cef2d8;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+  }
+  .grid-gap {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    row-gap: 18px;
+    column-gap: 10px;
+    margin-top: 20px;
+  }
+  .grid-gap .cell {
+    height: 60px;
+    background: #d8d0f2;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+  }
+  .radius-asym {
+    width: 100px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 4px 12px 4px 0;
+    background: #ffcf6b;
+  }
+  .color-box {
+    width: 140px;
+    height: 60px;
+    margin-top: 20px;
+    padding: 10px;
+    background: #3366cc;
+    color: #ffee00;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+  }
+  .styled-text {
+    margin-top: 20px;
+    width: 260px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+  }
+  .distance-row {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 20px;
+  }
+  .distance-row .chip-b {
+    width: 60px;
+    height: 40px;
+    background: #ffb3c6;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+  }
+  .stacked-group {
+    margin-top: 20px;
+  }
+  .stacked-a {
+    width: 200px;
+    height: 30px;
+    background: #b3d9ff;
+  }
+  .stacked-b {
+    width: 200px;
+    height: 30px;
+    margin-top: 22px;
+    background: #b3ffcc;
+  }
+  .hidden {
+    display: none;
+  }
+  footer {
+    margin-top: 400px;
+    padding: 40px;
+    background: #222;
+    color: #fff;
+    font-family: sans-serif;
+  }
+</style>
+</head>
+<body>
+  <h1>Measure Overlay Test Page</h1>
+  <div class="card">
+    <p>This card has padding and margin so the spacing layer has something to show.</p>
+    <p>Second paragraph in a different font style, still italic and monospace.</p>
+    <div class="grid">
+      <div class="box">Box A
+        <div class="nested">Nested content inside box A with its own padding/margin.</div>
+      </div>
+      <div class="box">Box B</div>
+      <div class="box">Box C</div>
+    </div>
+  </div>
+  <div class="tiny"></div>
+  <div class="thin-spacing">Thin</div>
+  <div class="flex-wrap-gap">
+    <div class="chip">Chip 1</div>
+    <div class="chip">Chip 2</div>
+    <div class="chip">Chip 3</div>
+    <div class="chip">Chip 4</div>
+    <div class="chip">Chip 5</div>
+  </div>
+  <div class="grid-gap">
+    <div class="cell">1</div>
+    <div class="cell">2</div>
+    <div class="cell">3</div>
+    <div class="cell">4</div>
+    <div class="cell">5</div>
+    <div class="cell">6</div>
+  </div>
+  <div class="radius-asym"></div>
+  <div class="color-box">Colored box</div>
+  <p class="styled-text">Styled text sample</p>
+  <div class="distance-row">
+    <div class="chip-b">A</div>
+    <div class="chip-b">B</div>
+    <div class="chip-b">C</div>
+  </div>
+  <div class="stacked-group">
+    <div class="stacked-a"></div>
+    <div class="stacked-b"></div>
+  </div>
+  <div class="hidden">This should never appear in the overlay.</div>
+  <footer>
+    <p>Footer text far down the page to test viewport-aware rendering and scroll re-render.</p>
+  </footer>
+</body>
+</html>

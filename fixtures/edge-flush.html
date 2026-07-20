@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Edge Flush</title>
+<style>
+  html, body { margin: 0; padding: 0; }
+  .full-width { width: 100%; height: 60px; background: #fdd; }
+  .right-flush { position: absolute; right: 0; top: 80px; width: 120px; height: 60px; background: #dfd; }
+  .bottom-content { height: 1400px; background: linear-gradient(#fff, #ccc); }
+  .flush-bottom { position: absolute; bottom: 0; left: 0; width: 100%; height: 40px; background: #ddf; }
+</style>
+</head>
+<body>
+  <div class="full-width">Full width flush to left and right edge</div>
+  <div class="right-flush">Right edge</div>
+  <div class="bottom-content">Tall content forcing vertical scroll</div>
+  <div class="flush-bottom">Flush bottom</div>
+</body>
+</html>
