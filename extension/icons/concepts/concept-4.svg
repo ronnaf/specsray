@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect x="4" y="4" width="120" height="120" rx="26" ry="26" fill="#182338"/>
+  <!-- caliper "S" spine -->
+  <path d="M46 34 C78 34 82 58 64 64 C46 70 50 94 82 94"
+        fill="none" stroke="#f2f4f8" stroke-width="14" stroke-linecap="round"/>
+  <!-- jaw ticks at both ends, perpendicular to travel -->
+  <g stroke="#ffc233" stroke-width="6" stroke-linecap="round">
+    <line x1="34" y1="26" x2="58" y2="26"/>
+    <line x1="70" y1="102" x2="94" y2="102"/>
+  </g>
+  <!-- mid-scale tick -->
+  <line x1="64" y1="56" x2="64" y2="72" stroke="#ffc233" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect x="4" y="4" width="120" height="120" rx="26" ry="26" fill="#182338"/>
+  <!-- margin box (orange, translucent) -->
+  <rect x="16" y="24" width="60" height="80" fill="#f6b26b" fill-opacity="0.55"/>
+  <!-- padding box (green, translucent), overlapping to the right -->
+  <rect x="52" y="24" width="60" height="80" fill="#93c47d" fill-opacity="0.55"/>
+  <!-- highlighted gap between them -->
+  <rect x="52" y="24" width="24" height="80" fill="#b28ae6"/>
+  <!-- dimension ticks marking the gap -->
+  <g stroke="#f2f4f8" stroke-width="4" stroke-linecap="round">
+    <line x1="52" y1="16" x2="52" y2="24"/>
+    <line x1="76" y1="16" x2="76" y2="24"/>
+    <line x1="52" y1="20" x2="76" y2="20"/>
+  </g>
+</svg>

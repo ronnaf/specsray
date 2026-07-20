@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect x="4" y="4" width="120" height="120" rx="26" ry="26" fill="#182338"/>
+  <!-- beam sweeping from the top-left corner -->
+  <polygon points="4,4 124,4 4,124" fill="#f2f4f8" fill-opacity="0.18"/>
+  <!-- beam edge -->
+  <line x1="124" y1="4" x2="4" y2="124" stroke="#ffc233" stroke-width="7" stroke-linecap="round"/>
+  <!-- ruler ticks crossing the beam edge -->
+  <g stroke="#ffc233" stroke-width="5" stroke-linecap="round">
+    <line x1="88" y1="28" x2="100" y2="40"/>
+    <line x1="58" y1="58" x2="70" y2="70"/>
+    <line x1="28" y1="88" x2="40" y2="100"/>
+  </g>
+</svg>

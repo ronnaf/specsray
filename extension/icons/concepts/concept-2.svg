@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect x="4" y="4" width="120" height="120" rx="26" ry="26" fill="#182338"/>
+  <!-- magnifier handle -->
+  <path d="M82 82 L108 108" stroke="#f2f4f8" stroke-width="14" stroke-linecap="round"/>
+  <!-- magnifier rim -->
+  <circle cx="54" cy="54" r="32" fill="#182338" stroke="#f2f4f8" stroke-width="11"/>
+  <!-- dimension line with arrowheads inside the lens -->
+  <g stroke="#ffc233" stroke-width="5" stroke-linecap="round" fill="none">
+    <line x1="34" y1="54" x2="74" y2="54"/>
+    <path d="M34 54 L44 46 M34 54 L44 62"/>
+    <path d="M74 54 L64 46 M74 54 L64 62"/>
+  </g>
+</svg>

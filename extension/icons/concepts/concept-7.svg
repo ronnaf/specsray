@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <clipPath id="lens7"><circle cx="76" cy="70" r="36"/></clipPath>
+  </defs>
+
+  <!-- the page, looking normal -->
+  <rect x="4" y="4" width="120" height="120" rx="22" ry="22" fill="#eef1f6"/>
+  <rect x="18" y="18" width="92" height="13" rx="3" fill="#445269"/>
+  <rect x="18" y="40" width="52" height="64" rx="3" fill="#8fbf7a"/>
+  <rect x="74" y="40" width="36" height="64" rx="3" fill="#e8a86a"/>
+
+  <!-- the x-ray porthole: same layout, revealed as wireframe on dark film,
+       outlined in the overlay's own accent colors -->
+  <g clip-path="url(#lens7)">
+    <rect x="4" y="4" width="120" height="120" fill="#10182a"/>
+    <rect x="18" y="18" width="92" height="13" rx="3" fill="none" stroke="#f2f4f8" stroke-width="3"/>
+    <rect x="18" y="40" width="52" height="64" rx="3" fill="none" stroke="#8fbf7a" stroke-width="3"/>
+    <rect x="74" y="40" width="36" height="64" rx="3" fill="none" stroke="#e8a86a" stroke-width="3"/>
+    <!-- gap dimension bracket between text and image blocks -->
+    <g stroke="#b28ae6" stroke-width="3" stroke-linecap="round">
+      <line x1="70" y1="56" x2="74" y2="56"/>
+      <line x1="70" y1="72" x2="74" y2="72"/>
+      <line x1="72" y1="56" x2="72" y2="72"/>
+    </g>
+  </g>
+
+  <!-- lens rim, no handle -->
+  <circle cx="76" cy="70" r="36" fill="none" stroke="#445269" stroke-width="5"/>
+  <circle cx="76" cy="70" r="36" fill="none" stroke="#f2f4f8" stroke-width="2"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <clipPath id="lens8"><circle cx="76" cy="70" r="37"/></clipPath>
+  </defs>
+
+  <!-- the page, looking normal -->
+  <rect x="4" y="4" width="120" height="120" rx="22" ry="22" fill="#eef1f6"/>
+  <rect x="18" y="18" width="92" height="13" rx="3" fill="#445269"/>
+  <rect x="18" y="40" width="52" height="64" rx="3" fill="#8b96a8"/>
+  <rect x="74" y="40" width="36" height="64" rx="3" fill="#c98a4b"/>
+
+  <!-- the x-ray porthole: same layout, revealed as glowing cyan wireframe on dark film -->
+  <g clip-path="url(#lens8)">
+    <rect x="4" y="4" width="120" height="120" fill="#0a1220"/>
+    <rect x="18" y="18" width="92" height="13" rx="3" fill="none" stroke="#4fd8e6" stroke-width="4"/>
+    <rect x="18" y="40" width="52" height="64" rx="3" fill="none" stroke="#4fd8e6" stroke-width="4"/>
+    <rect x="74" y="40" width="36" height="64" rx="3" fill="none" stroke="#4fd8e6" stroke-width="4"/>
+    <!-- gap dimension bracket, same accent so it reads as one clean signal -->
+    <g stroke="#4fd8e6" stroke-width="3" stroke-linecap="round">
+      <line x1="70" y1="58" x2="74" y2="58"/>
+      <line x1="70" y1="70" x2="74" y2="70"/>
+      <line x1="72" y1="58" x2="72" y2="70"/>
+    </g>
+  </g>
+
+  <!-- lens rim: dark ring for contrast on the light page, light ring for contrast on the dark film -->
+  <circle cx="76" cy="70" r="37" fill="none" stroke="#1c2434" stroke-width="6"/>
+  <circle cx="76" cy="70" r="37" fill="none" stroke="#f2f4f8" stroke-width="2.5"/>
+</svg>

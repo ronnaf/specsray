@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <clipPath id="lens6"><circle cx="80" cy="72" r="32"/></clipPath>
+  </defs>
+
+  <!-- the page, looking normal -->
+  <rect x="4" y="4" width="120" height="120" rx="22" ry="22" fill="#eef1f6"/>
+  <rect x="18" y="18" width="92" height="13" rx="3" fill="#445269"/>
+  <rect x="18" y="40" width="52" height="64" rx="3" fill="#8b96a8"/>
+  <rect x="74" y="40" width="36" height="64" rx="3" fill="#c98a4b"/>
+
+  <!-- magnifier handle, drawn under the rim -->
+  <path d="M103 95 L120 112" stroke="#445269" stroke-width="13" stroke-linecap="round"/>
+
+  <!-- the x-ray porthole: same layout, revealed as glowing wireframe on dark film -->
+  <g clip-path="url(#lens6)">
+    <rect x="4" y="4" width="120" height="120" fill="#0a1220"/>
+    <rect x="18" y="18" width="92" height="13" rx="3" fill="none" stroke="#4fd8e6" stroke-width="3"/>
+    <rect x="18" y="40" width="52" height="64" rx="3" fill="none" stroke="#4fd8e6" stroke-width="3"/>
+    <rect x="74" y="40" width="36" height="64" rx="3" fill="none" stroke="#4fd8e6" stroke-width="3"/>
+    <g stroke="#4fd8e6" stroke-width="3" stroke-linecap="round">
+      <line x1="74" y1="96" x2="74" y2="102"/>
+      <line x1="110" y1="96" x2="110" y2="102"/>
+      <line x1="74" y1="99" x2="110" y2="99"/>
+    </g>
+  </g>
+
+  <!-- lens rim -->
+  <circle cx="80" cy="72" r="32" fill="none" stroke="#f2f4f8" stroke-width="7"/>
+</svg>

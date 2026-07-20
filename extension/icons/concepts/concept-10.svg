@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect x="0" y="0" width="128" height="128" rx="22" ry="22" fill="#05070b"/>
+
+  <!-- outer halo -->
+  <g fill="#7fe0ff" opacity="0.12">
+    <ellipse cx="64" cy="28" rx="19" ry="17"/>
+    <ellipse cx="64" cy="90" rx="38" ry="44"/>
+  </g>
+
+  <!-- body: just two masses, head+thorax fused, and the elytra -->
+  <g fill="#7fe0ff" fill-opacity="0.32" stroke="#cdf4ff" stroke-width="3.5">
+    <ellipse cx="64" cy="28" rx="15" ry="13"/>
+    <ellipse cx="64" cy="88" rx="31" ry="38"/>
+  </g>
+
+  <!-- single spine + wing-case split, the one interior cue -->
+  <line x1="64" y1="16" x2="64" y2="124" stroke="#cdf4ff" stroke-width="3" stroke-opacity="0.65" stroke-linecap="round"/>
+
+  <!-- legs: bold, simplified to two segments each, thicker than reference for 16px legibility -->
+  <g id="legs-r" fill="none" stroke="#a8ecff" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M84 46 L106 42 L100 58"/>
+    <path d="M88 74 L114 78 L104 94"/>
+    <path d="M84 102 L104 112 L96 124"/>
+  </g>
+  <use href="#legs-r" transform="translate(128,0) scale(-1,1)"/>
+
+  <!-- antennae -->
+  <g id="antenna-r" fill="none" stroke="#a8ecff" stroke-width="7" stroke-linecap="round">
+    <path d="M70 16 Q84 2 96 4"/>
+  </g>
+  <use href="#antenna-r" transform="translate(128,0) scale(-1,1)"/>
+</svg>
