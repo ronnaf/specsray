@@ -1,31 +1,63 @@
-# Specsray
+<p align="center">
+  <img src="extension/icons/icon-128.png" alt="Specsray logo" width="96" height="96">
+</p>
 
-A one-click overlay that shows every measurement on a page at once: dimensions, spacing (with actual pixel values), distances between siblings, fonts, colors, and flex/grid gaps. No hovering over one element at a time, no opening dev tools, no guessing.
+<h1 align="center">Specsray</h1>
 
-Toggle it on, read the numbers, toggle it off. That's the whole workflow.
+<p align="center">
+  See the measurements behind any page. All at once.
+</p>
 
-**Install:** [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/specsray/) or drag the [bookmarklet](#bookmarklet) from `install.html`.
+<p align="center">
+  <a href="https://chromewebstore.google.com/detail/specsray-see-spacing-gaps/feaadcblkpfmlgioenakfbpeompkabfd"><img src="https://img.shields.io/badge/Install_for_Chrome-4285F4?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Install for Chrome" height="32"></a>
+  &nbsp;
+  <a href="https://addons.mozilla.org/en-US/firefox/addon/specsray/"><img src="https://img.shields.io/badge/Install_for_Firefox-FF7139?style=for-the-badge&amp;logo=firefoxbrowser&amp;logoColor=white" alt="Install for Firefox" height="32"></a>
+</p>
 
-## Two ways to use it
+<p align="center">
+  Prefer a bookmarklet? <a href="#bookmarklet">Get started here</a>.
+</p>
+
+---
+
+Specsray overlays dimensions, spacing, distances, fonts, and colors directly on a page. Toggle it on, read the numbers, toggle it off.
+
+![Specsray overlay showing element dimensions, spacing, distances, and colors on the Optical Toys website](docs/specsray-overlay.png)
+
+<p align="center"><sub>Specsray in action on Optical Toys, with dimensions, spacing, distances, and colors enabled.</sub></p>
+
+## What you can see
+
+| Layer | Measurements |
+| --- | --- |
+| Dimensions | Element width and height |
+| Spacing | Padding, margins, and flex/grid gaps in pixels |
+| Distances | Space between sibling elements |
+| Fonts | Typography details |
+| Colors | Text and background colors |
+
+## Get started
 
 ### Bookmarklet
 
-Open `install.html` in a browser, drag the button to your bookmarks bar, done. Click the bookmark on any page to toggle the overlay, click it again to remove it. Works in any browser, no install, no permissions.
+1. Download or clone this repository and open [install.html](install.html) locally in your browser.
+2. Drag the Specsray button to your bookmarks bar.
+3. Open a page and click the bookmark to show the overlay. Click it again to remove it.
 
 ### Browser extension
 
-The `extension/` folder is a MV3 extension that wraps the same overlay in a toolbar button.
+Install Specsray from your browser's extension store, then click its toolbar icon to toggle the overlay.
 
-- Chrome (or any Chromium browser): go to `chrome://extensions`, enable Developer mode, Load unpacked, pick the `extension/` folder.
-- Firefox: install from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/specsray/). You can also load it temporarily via `about:debugging#/runtime/this-firefox` for testing, or self-sign a build with `web-ext sign` for a permanent install outside the store.
+- **Chrome:** [Install from the Chrome Web Store](https://chromewebstore.google.com/detail/specsray-see-spacing-gaps/feaadcblkpfmlgioenakfbpeompkabfd).
+- **Firefox:** [Install from Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/specsray/).
 
-See `extension/README.md` for the full install and signing notes.
+For local development, load the `extension/` folder unpacked in Chrome or temporarily in Firefox. See the [extension guide](extension/README.md) for the full install and signing notes.
 
 ## Build
 
 `overlay.js` is the source of truth. Everything else is generated from it:
 
-```
+```sh
 node build.mjs
 ```
 
@@ -33,7 +65,7 @@ This minifies `overlay.js` into `overlay.min.js` (via terser), builds `bookmarkl
 
 To package the extension into store-ready zips (separate manifests for Firefox and Chrome, since they don't agree on how `background` should be declared):
 
-```
+```sh
 node extension/build.mjs
 ```
 
@@ -49,4 +81,4 @@ It works by snapshotting scroll dimensions and every element's bounding rect bef
 
 ## License
 
-MIT, see `LICENSE`.
+[MIT](LICENSE)
